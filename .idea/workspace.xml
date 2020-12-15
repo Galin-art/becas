@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="" />
+    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71a22bee-9291-46c1-8b0f-d2ae69f6c265.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71a22bee-9291-46c1-8b0f-d2ae69f6c265/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Beneficiario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Beneficiario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Colonia.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Colonia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Localidad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Localidad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Region.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Region.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/becas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/becas.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234103_create_regions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234202_create_municipios_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234237_create_localidads_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234309_create_colonias_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234337_create_beneficiarios_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/tarjeta.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/tarjeta.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ui/buscador.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ui/buscador.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +60,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -134,6 +187,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jyzCw5ss7Jk03qGmz7YCE1kQ35" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -141,14 +195,16 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyecto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -171,49 +227,66 @@
       <workItem from="1605050069282" duration="6939000" />
       <workItem from="1605058320044" duration="3871000" />
       <workItem from="1605134397794" duration="16178000" />
-      <workItem from="1605211190176" duration="1540000" />
+      <workItem from="1605211190176" duration="2985000" />
+      <workItem from="1605242168348" duration="2627000" />
+      <workItem from="1605627999815" duration="418000" />
+      <workItem from="1605712554544" duration="10372000" />
+      <workItem from="1605743318705" duration="359000" />
+      <workItem from="1605751263606" duration="8543000" />
+      <workItem from="1605803668702" duration="5559000" />
+      <workItem from="1605809878678" duration="6801000" />
+      <workItem from="1605831691890" duration="4052000" />
+      <workItem from="1605837638523" duration="2672000" />
+      <workItem from="1605888846030" duration="716000" />
+      <workItem from="1605906291553" duration="7873000" />
+      <workItem from="1605919097772" duration="322000" />
+      <workItem from="1606023380653" duration="7401000" />
+      <workItem from="1606158960249" duration="5328000" />
+      <workItem from="1606182683489" duration="6016000" />
+      <workItem from="1606241096873" duration="19053000" />
+      <workItem from="1606271963251" duration="928000" />
+      <workItem from="1606425665722" duration="134000" />
+      <workItem from="1606426025167" duration="6802000" />
+      <workItem from="1606498882494" duration="1232000" />
+      <workItem from="1606755952188" duration="12090000" />
+      <workItem from="1606780863899" duration="739000" />
+      <workItem from="1607123713511" duration="1430000" />
+      <workItem from="1607195680059" duration="11616000" />
+      <workItem from="1607392268740" duration="4225000" />
+      <workItem from="1607481182106" duration="2902000" />
+      <workItem from="1607976917096" duration="58000" />
+      <workItem from="1607979958810" duration="236000" />
+      <workItem from="1607980350264" duration="147000" />
+      <workItem from="1607980575548" duration="16537000" />
+      <workItem from="1608059710407" duration="5218000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605051876448">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1605051876448" />
-    <state x="428" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604792732211">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="428" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604792732211" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604989499447">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604989499447" />
-    <state width="905" height="176" key="GridCell.Tab.0.bottom" timestamp="1605055995689">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="905" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605055995689" />
-    <state width="905" height="176" key="GridCell.Tab.0.center" timestamp="1605055995688">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="905" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605055995688" />
-    <state width="905" height="176" key="GridCell.Tab.0.left" timestamp="1605055995688">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="905" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605055995688" />
-    <state width="905" height="176" key="GridCell.Tab.0.right" timestamp="1605055995688">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="905" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605055995688" />
-    <state x="517" y="283" key="NewPhpFileDialog" timestamp="1605145495313">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="517" y="283" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605145495313" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1605055630210">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1605055630210" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

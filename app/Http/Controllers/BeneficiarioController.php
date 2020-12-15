@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Beneficiario;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BeneficiarioController extends Controller
 {
@@ -11,6 +12,7 @@ class BeneficiarioController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('isadmin',['only'=>'index']);
     }
 
 
@@ -21,7 +23,11 @@ class BeneficiarioController extends Controller
      */
     public function index()
     {
-        $listaBene= Beneficiario::with('colonia.localidad.municipio.region')->simplePaginate(50);
+        $listaBene= Beneficiario::with('localidad.municipio.region',)->simplePaginate(50);
+
+//        $prueba=Auth::user();
+//        $cosulta= Beneficiario::with('localidad.municipio.region')->where($prueba==region_id);
+
 
 //        return $listaBene;
         return view('Beneficiarios.lista',compact('listaBene'));
@@ -107,12 +113,45 @@ class BeneficiarioController extends Controller
 
     public function detalles($id){
 
-        $informacion = Beneficiario::find($id);
+//        $informacion = Beneficiario::find($id);
+//return $informacion;
+        $informacion= Beneficiario::with('transferencias.bimestre')->find($id);
+        $infoC = Beneficiario::with('localidad.municipio.region')->find($id);
 
-        return view('Beneficiarios.detalles',compact('informacion'));
+//  return $informacion;
+//        return $infoC;
+
+        return view('Beneficiarios.detalles',compact('informacion','infoC'));
 
 
     }
+
+
+
+
+
+
+
+
+//{{$infoC}}
+//@foreach($informacion->transferencias as $transf)
+//{{$transf->monto}}
+//       @endforeach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

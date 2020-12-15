@@ -17,8 +17,6 @@ class Colonia extends Model
         return $this->belongsTo(Localidad::class);
     }
 
-    public function beneficiarios(){
-        return $this->hasMany(Beneficiario::class);
-    }
+
 
 }

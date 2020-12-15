@@ -16,9 +16,12 @@ class Beneficiario extends Model
 
 
 
-    public function colonia()
+    public function localidad()
     {
-        return $this->belongsTo(Colonia::class);
+        return $this->belongsTo(Localidad::class);
+    }
+    public function transferencias(){
+        return $this->hasMany(Transferencias::class);
     }
 
 

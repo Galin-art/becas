@@ -16,7 +16,7 @@ class Localidad extends Model
         return $this->belongsTo(Municipio::class);
     }
 
-    public function colonias(){
-        return $this->hasMany(Colonia::class);
+    public function beneficiarios(){
+        return $this->hasMany(Beneficiario::class);
     }
 }

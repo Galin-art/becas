@@ -16,4 +16,6 @@ class Region extends Model
     public function municipios(){
         return $this->hasMany(Municipio::class);
     }
+
+
 }

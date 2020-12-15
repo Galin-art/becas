@@ -57,3 +57,41 @@ CONSTRAINT fk_colonias FOREIGN KEY (colonia_id)REFERENCES colonias(id)
 )ENGINE=InnoDb;
 
 drop table beneficiarios;
+
+
+
+create table bimestres
+(
+    id int not null auto_increment,
+    bimestre varchar(100),
+    CONSTRAINT pk_bimestres PRIMARY KEY (id)
+) ENGINE = InnoDb;
+
+CREATE TABLE tarjetas(
+ id int not null auto_increment,
+ tipo varchar(100),
+ status enum('status'),
+ CONSTRAINT pk_tarjetas PRIMARY KEY (id)
+)ENGINE = InnoDb;
+
+
+
+
+CREATE TABLE  transferencias(
+id int not null auto_increment,
+bimestre_id int(50),
+tarjeta_id int(50),
+beneficiario_id int(50),
+año int(50),
+canal int(50),
+tipoCanal varchar(100),
+modalidad varchar(100),
+tipoDocumento varchar(100),
+observaciones varchar(200),
+CONSTRAINT pk_transferencias PRIMARY KEY (id),
+CONSTRAINT  fk_beneficiario FOREIGN KEY (beneficiario_id) REFERENCES beneficiarios(id)
+
+)ENGINE=InnoDb;
+drop table transferencias;
+
+
