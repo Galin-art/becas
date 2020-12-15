@@ -1,8 +1,28 @@
 @extends('layouts.app')
 @section('navegacion')
     @include('ui.adminnav')
+
 @endsection
+{{--@section('navegacion1')--}}
+{{--    @include('ui.nave2')--}}
+
+{{--@endsection--}}
+
 @section('content')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="container">
         <div class="row justify-content-center">

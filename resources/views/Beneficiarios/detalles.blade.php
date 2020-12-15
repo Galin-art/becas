@@ -275,7 +275,7 @@
                                 <table class="border-collapse w-full">
                                     <thead>
                                     <tr>
-                                        <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell bg-green-400">MONTO</th>
+                                        <th class="p-3 font-bold uppercase bg-gray-200 text-white border border-gray-300 hidden lg:table-cell bg-teal-700">MONTO</th>
                                         <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell bg-green-400">CANAL</th>
                                         <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell bg-green-400">BIMESTRE</th>
                                         <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell bg-green-400">MODALIDAD</th>
@@ -455,7 +455,11 @@
         </div>
 
     </div>
-
-
+<br>
+    <button
+        class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none"
+    >
+        <a href="{{route('lista.beneficiario')}}">volver</a>
+    </button>
 
 @endsection

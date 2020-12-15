@@ -16,41 +16,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71a22bee-9291-46c1-8b0f-d2ae69f6c265.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71a22bee-9291-46c1-8b0f-d2ae69f6c265/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2 terminada">
+      <change afterPath="$PROJECT_DIR$/resources/views/ui/nave2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Beneficiario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Beneficiario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Colonia.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Colonia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Localidad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Localidad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Region.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Region.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becas.sql" beforeDir="false" afterPath="$PROJECT_DIR$/becas.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234103_create_regions_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234202_create_municipios_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234237_create_localidads_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234309_create_colonias_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_234337_create_beneficiarios_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/tarjeta.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/tarjeta.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alumnos/mediaSuperior.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumnos/mediaSuperior.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alumnos/superior.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumnos/superior.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ui/buscador.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ui/buscador.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,8 +234,16 @@
       <workItem from="1607979958810" duration="236000" />
       <workItem from="1607980350264" duration="147000" />
       <workItem from="1607980575548" duration="16537000" />
-      <workItem from="1608059710407" duration="5218000" />
+      <workItem from="1608059710407" duration="14544000" />
     </task>
+    <task id="LOCAL-00001" summary="fase 2 terminada">
+      <created>1608065784392</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608065784392</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,5 +272,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fase 2 terminada" />
+    <option name="LAST_COMMIT_MESSAGE" value="fase 2 terminada" />
   </component>
 </project>
