@@ -8,11 +8,12 @@
 
 {{--@endsection--}}
 
+
 @section('content')
 
 
 
-
+@csrf
 
 
 

@@ -40,7 +40,9 @@ Route::get('beneficiario/tarjeta',[\App\Http\Controllers\TarjetaController::clas
 Route::get('/region',[\App\Http\Controllers\RegionController::class, 'region'])->name('region.Huajuapan');
 
 
-
+//usuarios
+Route::get('/usuario',[\App\Http\Controllers\UsuarioController::class,'index'])->name('lista.Usuario');
+Route::post('/',[\App\Http\Controllers\UsuarioController::class,'store'])->name('users.store');
 
 
 
