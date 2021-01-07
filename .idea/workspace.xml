@@ -16,12 +16,31 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2 terminada">
-      <change afterPath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" afterDir="false" />
+    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.1">
+      <change afterPath="$PROJECT_DIR$/app/Imports/RegionesImport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/excel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/importar/import.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-8H6sgmrRaxHqd072yLSCA6yxOElxR3Ue.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-Z0N8wH8XhiNgEi9KcxPolwHfLxc8p33H.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-f2NHItS6SmEBeQm0GZ5pFqtwbsx9R02g.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-goMBLY0nA47RFlAEqqze4tv1DwH3c390.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-mnVTppNgwJOq0jRJa9NkiIH1Bu9I2rx2.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-n8mLio3gv2dSRZJgVbOrdj2pD0G19cv5.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-nbWN6cWtWyqdT2fIrxAhVAyBVdMfbIsQ.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-vPoCC32Ia9nhAeYxRFOvGL5QNrq2tPfd.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-z7GP3bW5HJ5YfAbgUg6T1yFtL7jtGvy7.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-zYWEGfo7yKasKX61EshoLMa7l2wnNrf5.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/becas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/becas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Region.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Region.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/todoUsuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/todoUsuarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -157,6 +176,14 @@
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jyzCw5ss7Jk03qGmz7YCE1kQ35" />
@@ -166,6 +193,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -235,7 +263,10 @@
       <workItem from="1608480108144" duration="727000" />
       <workItem from="1608493373348" duration="7158000" />
       <workItem from="1608562420072" duration="4427000" />
-      <workItem from="1608591882856" duration="1825000" />
+      <workItem from="1608591882856" duration="2994000" />
+      <workItem from="1610006389915" duration="1094000" />
+      <workItem from="1610039193558" duration="7473000" />
+      <workItem from="1610048835362" duration="1200000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>
@@ -251,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608075226663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fase 2.1">
+      <created>1608593809036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608593809036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +321,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fase 2 terminada" />
-    <option name="LAST_COMMIT_MESSAGE" value="fase 2 terminada" />
+    <MESSAGE value="fase 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fase 2.1" />
   </component>
 </project>

@@ -4,6 +4,9 @@
 @endsection
 
 @section('content')
+
+
+
     <h1 class="text-2xl text-center mt-10">
         <a>
             @if($infoC)
@@ -36,6 +39,12 @@
 
         </a>
     </h1>
+
+    <button
+        class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none"
+    >
+        <a href="{{route('lista.beneficiario')}}">volver</a>
+    </button>
 
 
     <div class="container mx-auto">

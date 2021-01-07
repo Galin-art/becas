@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Region extends Model
 {
+
+    protected $fillable=[
+    'id',
+    'region',
+];
     use HasFactory;
 
 
-    protected $table= 'regiones';
+//    protected $table= 'regiones';
 
 
     public function municipios(){
@@ -18,4 +23,7 @@ class Region extends Model
     }
 
 
+
+
 }
+

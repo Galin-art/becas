@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\RegionesImport;
 use App\Models\Beneficiario;
 use App\Models\Region;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class RegionController extends Controller
 {
@@ -113,6 +115,17 @@ class RegionController extends Controller
 
 //        return $filtrados1;
         return view('regiones.usuarioRegion', compact('filtrados1'));
+    }
+
+
+    public function import(Request $request)
+    {
+        $file = $request->file('file');
+        Excel::import(new RegionesImport, $file);
+
+        return back()->with('message', 'Importanción de Regiones completada');
+        return redirect('/importar')->with('success', 'All good!');
+
     }
 
 
