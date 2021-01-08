@@ -47,7 +47,10 @@ Route::post('/',[\App\Http\Controllers\UsuarioController::class,'store'])->name(
 //importar
 Route::get('/importar',[\App\Http\Controllers\UsuarioController::class,'importar'])->name('import.tablas');
 
+
+
 Route::post('/importar1',[\App\Http\Controllers\RegionController::class,'import'])->name('region.import.exel');
+Route::post('/importar2',[\App\Http\Controllers\MunicipioController::class,'import1'])->name('municipio.import.exel');
 
 
 

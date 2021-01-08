@@ -17,31 +17,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.1">
-      <change afterPath="$PROJECT_DIR$/app/Imports/RegionesImport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/excel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/importar/import.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-8H6sgmrRaxHqd072yLSCA6yxOElxR3Ue.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-Z0N8wH8XhiNgEi9KcxPolwHfLxc8p33H.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-f2NHItS6SmEBeQm0GZ5pFqtwbsx9R02g.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-goMBLY0nA47RFlAEqqze4tv1DwH3c390.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-mnVTppNgwJOq0jRJa9NkiIH1Bu9I2rx2.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-n8mLio3gv2dSRZJgVbOrdj2pD0G19cv5.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-nbWN6cWtWyqdT2fIrxAhVAyBVdMfbIsQ.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-vPoCC32Ia9nhAeYxRFOvGL5QNrq2tPfd.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-z7GP3bW5HJ5YfAbgUg6T1yFtL7jtGvy7.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/laravel-excel/laravel-excel-zYWEGfo7yKasKX61EshoLMa7l2wnNrf5.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/becas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/becas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Imports/MunicipioImport.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MunicipioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MunicipioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Imports/RegionesImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/RegionesImport.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Region.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Region.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/todoUsuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/todoUsuarios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ui/adminnav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/importar/import.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/importar/import.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,6 +187,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -215,6 +198,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="" />
@@ -266,7 +252,9 @@
       <workItem from="1608591882856" duration="2994000" />
       <workItem from="1610006389915" duration="1094000" />
       <workItem from="1610039193558" duration="7473000" />
-      <workItem from="1610048835362" duration="1200000" />
+      <workItem from="1610048835362" duration="8806000" />
+      <workItem from="1610065538739" duration="193000" />
+      <workItem from="1610065895273" duration="476000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>
@@ -289,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608593809036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fase 2.1">
+      <created>1610050200786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610050200786</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fase 2.1">
+      <created>1610050381604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610050381604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

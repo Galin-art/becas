@@ -90,4 +90,21 @@ class MunicipioController extends Controller
     {
         //
     }
+
+
+
+    public function import1(Request $request)
+    {
+        $file = $request->file('file');
+        Excel::import(new RegionesImport, $file);
+
+
+
+
+        return back()->with('message', 'Importanción de Regiones completada');
+        return redirect('/importar')->with('success', 'All good!');
+
+    }
+
+
 }
