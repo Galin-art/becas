@@ -22,9 +22,9 @@ class CreateBeneficiariosTable extends Migration
             $table->string('folio');
             $table->string('curp')->nullable();
             $table->string('entidad')->nullable();
-            $table->string('famid')->nullable();
-            $table->string('no_ext')->nullable();
-            $table->string('referencias')->nullable();
+//            $table->string('famid')->nullable();
+//            $table->string('no_ext')->nullable();
+//            $table->string('referencias')->nullable();
             $table->unsignedBigInteger('localidad_id');
             $table->timestamps();
 

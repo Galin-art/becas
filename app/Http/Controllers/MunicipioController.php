@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\MunicipioImport;
 use App\Models\Municipio;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class MunicipioController extends Controller
 {
@@ -96,12 +98,12 @@ class MunicipioController extends Controller
     public function import1(Request $request)
     {
         $file = $request->file('file');
-        Excel::import(new RegionesImport, $file);
+        Excel::import(new MunicipioImport, $file);
 
 
 
 
-        return back()->with('message', 'Importanción de Regiones completada');
+        return back()->with('message', 'Importanción de municipios completada');
         return redirect('/importar')->with('success', 'All good!');
 
     }

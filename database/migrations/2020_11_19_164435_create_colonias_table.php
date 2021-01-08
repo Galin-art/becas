@@ -22,6 +22,7 @@ class CreateColoniasTable extends Migration
             $table->string('vialidad1')->nullable();
             $table->string('vialidad2')->nullable();
             $table->string('vialidad3')->nullable();
+            $table->string('no_ext')->nullable();
             $table->unsignedBigInteger('localidad_id');
             $table->timestamps();
 
