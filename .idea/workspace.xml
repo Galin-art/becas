@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -17,13 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.5">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/becas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/becas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d0c7c860-abf8-4209-9f79-75ea076f5bcd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d0c7c860-abf8-4209-9f79-75ea076f5bcd/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9e2b118-977c-4c7a-85be-8be080e1a4a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9e2b118-977c-4c7a-85be-8be080e1a4a5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MunicipioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MunicipioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Imports/MunicipioImport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_164435_create_colonias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_164435_create_colonias_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_164448_create_beneficiarios_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_164448_create_beneficiarios_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LocalidadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LocalidadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Imports/BeneficiarioImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/BeneficiarioImport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Imports/LocalidadImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/LocalidadImport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Imports/MunicipioImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/MunicipioImport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Beneficiario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Beneficiario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Localidad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Localidad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/detalles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/importar/import.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/importar/import.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +193,7 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
       <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/realrashid/sweet-alert" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jyzCw5ss7Jk03qGmz7YCE1kQ35" />
@@ -187,7 +208,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sistema-Becas" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -269,7 +290,10 @@
       <workItem from="1610065895273" duration="1397000" />
       <workItem from="1610067443323" duration="131000" />
       <workItem from="1610067849986" duration="199000" />
-      <workItem from="1610068152071" duration="3036000" />
+      <workItem from="1610068152071" duration="12648000" />
+      <workItem from="1610081990030" duration="32000" />
+      <workItem from="1610392479404" duration="340000" />
+      <workItem from="1610397100177" duration="16800000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>
@@ -327,7 +351,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610066827932</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fase 2.5">
+      <created>1610071766459</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610071766459</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fase 2.5">
+      <created>1610071805758</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610071805758</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

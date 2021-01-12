@@ -8,7 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Beneficiario extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'id',
+        'nombre',
+        'paterno',
+        'materno',
+        'telefono',
+        'folio',
+        'curp',
+        'entidad',
+        'localidad_id',
 
+
+    ];
 
     protected $table='beneficiarios';
 
@@ -24,6 +36,9 @@ class Beneficiario extends Model
         return $this->hasMany(Transferencias::class);
     }
 
+    public function integrant(){
+        return $this->HasMany(Integrante::class);
+    }
 
 
     public function scopeCurp($query, $curpsss){

@@ -124,10 +124,10 @@ class RegionController extends Controller
         Excel::import(new RegionesImport, $file);
 
 
-        
 
-        return back()->with('message', 'Importanción de Regiones completada');
-        return redirect('/importar')->with('success', 'All good!');
+
+//        return back()->with('message', 'Importanción de Regiones completada');
+        return redirect('/importar')->with('success', 'importacion completa!');
 
     }
 

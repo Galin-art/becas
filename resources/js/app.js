@@ -22,3 +22,5 @@ new Vue({
             },
         }),
 }).$mount(app);
+
+window.Swal = require('sweetalert2')

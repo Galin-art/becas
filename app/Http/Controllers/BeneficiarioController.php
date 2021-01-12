@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\BeneficiarioImport;
 use App\Models\Beneficiario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Facades\Excel;
 
 class BeneficiarioController extends Controller
 {
@@ -63,8 +65,8 @@ class BeneficiarioController extends Controller
     public function show(Request $request)
     {
         //
-       $getCurp = $request->get('curp');
-       $getFamiid= $request->get('famid');
+        $getCurp = $request->get('curp');
+        $getFamiid= $request->get('famid');
 
         $listaBene= Beneficiario::orderBy('id', 'ASC')
             ->Curp($getCurp)
@@ -117,14 +119,16 @@ class BeneficiarioController extends Controller
 //return $informacion;
         $informacion= Beneficiario::with('transferencias.bimestre')->find($id);
         $infoC = Beneficiario::with('localidad.municipio.region')->find($id);
-
+        $int = Beneficiario::with('integrant')->find($id);
 //  return $informacion;
 //        return $infoC;
+//        return $int;
 
-        return view('Beneficiarios.detalles',compact('informacion','infoC'));
+        return view('Beneficiarios.detalles',compact('informacion','infoC','int'));
 
 
     }
+
 
 
 
@@ -144,7 +148,18 @@ class BeneficiarioController extends Controller
 
 
 
+    public function import4 (Request $request)
+    {
+        $file = $request->file('file');
+        Excel::import(new BeneficiarioImport, $file);
 
+
+
+
+        return back()->with('message', 'Importanción de municipios completada');
+        return redirect('/importar')->with('success', 'All good!');
+
+    }
 
 
 

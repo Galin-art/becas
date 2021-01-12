@@ -110,10 +110,10 @@
                                 <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
                                     <span class="font-normal">
 
-                                        @if($infoC)
+                                        @if($infoC==null)
                                             {{$informacion->curp}}
                                         @else
-                                            no hay  Curp por mostrar
+                                            no tiene una curt registrada
                                         @endif
                                     </span>
                                 </dd>
@@ -141,13 +141,114 @@
                                     <span class="font-normal">
 
                                         @if($infoC)
-                                            {{$informacion->famid}}
+                                            {{$informacion->id}}
                                         @else
                                             no hay  bimestre por mostrar
                                         @endif
                                     </span>
                                 </dd>
                             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="shadow-md bg-gray-800 text-gray-200 text-justify" x-data="{open: false}">
+                            <div class="bg-white mx-auto p-6">
+                                <div class="mb-4">
+                                    <div class="flex items-center justify-between bg-gray-200 pl-3 pr-2 py-3 w-60 rounded text-gray-600 font-bold cursor-pointer hover:bg-gray-300">
+                                        integrantes id
+                                        <div class="ml-4">
+                                            <div @click="open = !open;" class="flex items-center cursor-pointer px-3 py-2 text-gray-200 hover:text-gray-600" :class="{'transform rotate-180': open}">
+                                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex flex-col mt-8" :class="{'hidden': !open}">
+
+                                        <p class="text-gray-600 mb-3">
+
+                                            <tbody>
+                                            @forelse($int->integrant as $mys)
+
+
+
+                                            @if($mys)
+                                                {{$mys->beneficiario_id}}
+                                            @else
+                                                no tiene ningun integrante
+                                            @endif
+
+                                            @empty
+
+                                            @endforelse
+
+                                            </tbody>
+
+                                        </p>
+
+                                         </div>
+                                </div>
+
+                            </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -222,7 +323,7 @@
             <div class="md:w-1/2">
                 <BR>
 
-{{--                <h1 class="text-2xl text-center mt-10"><a>PAGOS O MONTOS</a></h1>--}}
+                <h1 class="text-2xl text-center mt-10"><a>PAGOS O MONTOS</a></h1>
 
                 <div class="mt-10 mb-20 md:flex items-start">
                     <br>
@@ -348,47 +449,47 @@
 
                         <div>
                             <dl>
-{{--                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">--}}
-{{--                                    <dt class="text-sm leading-5 font-medium text-gray-500">--}}
-{{--                                        Año--}}
-{{--                                    </dt>--}}
-{{--                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">--}}
-{{--                                        <span class="font-normal">--}}
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm leading-5 font-medium text-gray-500">
+                                        Año
+                                    </dt>
+                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                        <span class="font-normal">
 
-{{--                                            @foreach($informacion->transferencias as $transf)--}}
-{{--                                                {{$transf->año}}--}}
-{{--                                            @endforeach--}}
+                                            @foreach($informacion->transferencias as $transf)
+                                                {{$transf->año}}
+                                            @endforeach
 
-{{--                                        </span>--}}
-{{--                                    </dd>--}}
-{{--                                </div>--}}
-{{--                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">--}}
-{{--                                    <dt class="text-sm leading-5 font-medium text-gray-500">--}}
-{{--                                        Bimestre--}}
-{{--                                    </dt>--}}
-{{--                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">--}}
-{{--                                        <span class="font-normal">--}}
+                                        </span>
+                                    </dd>
+                                </div>
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm leading-5 font-medium text-gray-500">
+                                        Bimestre
+                                    </dt>
+                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                        <span class="font-normal">
 
-{{--                                            @foreach($informacion->transferencias as $transf)--}}
-{{--                                                {{$transf->bimestre->bimestre}}--}}
-{{--                                            @endforeach--}}
-
-
-{{--                                        </span></dd>--}}
-{{--                                </div>--}}
+                                            @foreach($informacion->transferencias as $transf)
+                                                {{$transf->bimestre->bimestre}}
+                                            @endforeach
 
 
-{{--                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">--}}
-{{--                                    <dt class="text-sm leading-5 font-medium text-gray-500">--}}
-{{--                                        canal--}}
-{{--                                    </dt>--}}
-{{--                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">--}}
-{{--                                        <span class="font-normal">--}}
-{{--                                        @foreach($informacion->transferencias as $transf)--}}
-{{--                                                {{$transf->canal}}--}}
-{{--                                            @endforeach--}}
-{{--                                         </span></dd>--}}
-{{--                                </div>--}}
+                                        </span></dd>
+                                </div>
+
+
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm leading-5 font-medium text-gray-500">
+                                        canal
+                                    </dt>
+                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                        <span class="font-normal">
+                                        @foreach($informacion->transferencias as $transf)
+                                                {{$transf->canal}}
+                                            @endforeach
+                                         </span></dd>
+                                </div>
 
 
                                 <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -403,31 +504,31 @@
                                             @endforeach </span>
                                     </dd>
                                 </div>
-{{--                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">--}}
-{{--                                    <dt class="text-sm leading-5 font-medium text-gray-500">--}}
-{{--                                        Modalidad--}}
-{{--                                    </dt>--}}
-{{--                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">--}}
-{{--                                        <span class="font-normal">--}}
-{{--                                             @foreach($informacion->transferencias as $transf)--}}
-{{--                                                {{$transf->modalidad}}--}}
-{{--                                            @endforeach </span>--}}
-{{--                                        </span>--}}
-{{--                                    </dd>--}}
-{{--                                </div>--}}
-{{--                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">--}}
-{{--                                    <dt class="text-sm leading-5 font-medium text-gray-500">--}}
-{{--                                        Monto--}}
-{{--                                    </dt>--}}
-{{--                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">--}}
-{{--                                        <h2></h2><span--}}
-{{--                                            class="font-normal  text-pink-800 text-lg bg-clip-content p-4 bg-indigo-300 border-4 border-indigo-300 border-dashed">--}}
-{{--                                        @foreach($informacion->transferencias as $transf)--}}
-{{--                                                {{$transf->monto}}--}}
-{{--                                            @endforeach </span>--}}
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm leading-5 font-medium text-gray-500">
+                                        Modalidad
+                                    </dt>
+                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                        <span class="font-normal">
+                                             @foreach($informacion->transferencias as $transf)
+                                                {{$transf->modalidad}}
+                                            @endforeach </span>
+                                        </span>
+                                    </dd>
+                                </div>
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm leading-5 font-medium text-gray-500">
+                                        Monto
+                                    </dt>
+                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                        <h2></h2><span
+                                            class="font-normal  text-pink-800 text-lg bg-clip-content p-4 bg-indigo-300 border-4 border-indigo-300 border-dashed">
+                                        @foreach($informacion->transferencias as $transf)
+                                                {{$transf->monto}}
+                                            @endforeach </span>
 
-{{--                                    </dd>--}}
-{{--                                </div>--}}
+                                    </dd>
+                                </div>
 
                                 <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                     <dt class="text-sm leading-5 font-medium text-gray-500">

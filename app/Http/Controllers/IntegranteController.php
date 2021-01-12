@@ -2,20 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Imports\LocalidadImport;
-use App\Models\Localidad;
+use App\Imports\IntegranteImport;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
-class LocalidadController extends Controller
+
+class IntegranteController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-
     /**
      * Display a listing of the resource.
      *
@@ -50,10 +43,10 @@ class LocalidadController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Localidad  $localidad
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Localidad $localidad)
+    public function show($id)
     {
         //
     }
@@ -61,10 +54,10 @@ class LocalidadController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Localidad  $localidad
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Localidad $localidad)
+    public function edit($id)
     {
         //
     }
@@ -73,10 +66,10 @@ class LocalidadController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Localidad  $localidad
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Localidad $localidad)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -84,35 +77,28 @@ class LocalidadController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Localidad  $localidad
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Localidad $localidad)
+    public function destroy($id)
     {
         //
     }
 
 
-
-
-
-
-    public function import2(Request $request)
+    public function import5(Request $request)
     {
+//        return $request;
         $file = $request->file('file');
-        Excel::import(new LocalidadImport, $file);
+        Excel::import(new IntegranteImport, $file);
 
 
 
 
-        return back()->with('message', 'Importanción de municipios completada');
+        return back()->with('message', 'Importanción de integrantes completada');
         return redirect('/importar')->with('success', 'All good!');
 
     }
-
-
-
-
 
 
 }

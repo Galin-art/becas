@@ -1,5 +1,5 @@
 <?php
-
+use RealRashid\SweetAlert\Facades\Alert;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeneficiarioController;
@@ -16,6 +16,7 @@ use App\Http\Controllers\BeneficiarioController;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -51,6 +52,9 @@ Route::get('/importar',[\App\Http\Controllers\UsuarioController::class,'importar
 
 Route::post('/importar1',[\App\Http\Controllers\RegionController::class,'import'])->name('region.import.exel');
 Route::post('/importar2',[\App\Http\Controllers\MunicipioController::class,'import1'])->name('municipio.import.exel');
+Route::post('/importar3',[\App\Http\Controllers\LocalidadController::class,'import2'])->name('localidad.import.exel');
+Route::post('/importar4',[\App\Http\Controllers\BeneficiarioController::class,'import4'])->name('benefeciario.import.exel');
+Route::post('/importar5',[\App\Http\Controllers\IntegranteController::class,'import5'])->name('integrantes.import.exel');
 
 
 

@@ -2,14 +2,14 @@
 
 namespace App\Imports;
 
-use App\Models\Localidad;
+use App\Models\Integrante;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\SkipsOnError;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class LocalidadImport implements ToModel, WithHeadingRow, SkipsOnError
+class IntegranteImport implements ToModel, WithHeadingRow, SkipsOnError
 {
     use Importable;
 
@@ -25,13 +25,12 @@ class LocalidadImport implements ToModel, WithHeadingRow, SkipsOnError
 
     public function model(array $row)
     {
-        return new Localidad([
+        return new Integrante([
             //
             'id'=>$row['id'],
-            'localidad'=>$row['localidad'],
-            'cons'=>$row['cons'],
-            'inegi'=>$row['inegi'],
-            'municipio_id'=>$row['municipio_id'],
+            'integrante'=>$row['integrante'],
+            'beneficiario_id'=>$row['beneficiario_id'],
+
         ]);
     }
 }
