@@ -33,7 +33,7 @@ class Beneficiario extends Model
         return $this->belongsTo(Localidad::class);
     }
     public function transferencias(){
-        return $this->hasMany(Transferencias::class);
+        return $this->hasMany(Transferencia::class);
     }
 
     public function integrant(){

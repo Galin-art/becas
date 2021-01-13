@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Transferencias;
+use App\Models\Transferencia;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TransferenciasFactory extends Factory
@@ -12,7 +12,7 @@ class TransferenciasFactory extends Factory
      *
      * @var string
      */
-    protected $model = Transferencias::class;
+    protected $model = Transferencia::class;
 
     /**
      * Define the model's default state.

@@ -11,8 +11,8 @@ class Municipio extends Model
 
 
     protected $fillable=[
+        'id',
         'municipio',
-        'cod_postale',
         'region_id',
 
         ];

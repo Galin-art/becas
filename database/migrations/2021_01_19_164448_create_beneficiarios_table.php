@@ -26,10 +26,12 @@ class CreateBeneficiariosTable extends Migration
 //            $table->string('no_ext')->nullable();
 //            $table->string('referencias')->nullable();
             $table->unsignedBigInteger('localidad_id');
+            $table->unsignedBigInteger('domicilio_id')->nullable();
             $table->timestamps();
 
 
             $table->foreign('localidad_id')->references('id')->on('localidades');
+            $table->foreign('domicilio_id')->references('id')->on('domicilios');
 
         });
     }

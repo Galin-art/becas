@@ -120,9 +120,9 @@ class BeneficiarioController extends Controller
         $informacion= Beneficiario::with('transferencias.bimestre')->find($id);
         $infoC = Beneficiario::with('localidad.municipio.region')->find($id);
         $int = Beneficiario::with('integrant')->find($id);
-//  return $informacion;
-//        return $infoC;
-//        return $int;
+//  return $informacion; //me trae los datos de la persona y transferencias
+//        return $infoC;//la localidad su municipio y su region
+//        return $int;//me trae los datos de los integrantes
 
         return view('Beneficiarios.detalles',compact('informacion','infoC','int'));
 

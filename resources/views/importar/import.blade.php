@@ -118,10 +118,10 @@
                             <form action="{{route('municipio.import.exel')}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
-{{--                                @if(Session::has('message'))--}}
-{{--                                    <p>{{ Session::get('message') }}</p>--}}
-{{--                                    <br>--}}
-{{--                                @endif--}}
+                                @if(Session::has('message'))
+                                    <p>{{ Session::get('message') }}</p>
+                                    <br>
+                                @endif
                                 <br>
 
                                 <input type="file" name="file">

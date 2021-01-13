@@ -9,7 +9,7 @@ class Bimestre extends Model
 {
     use HasFactory;
     public function transferencias(){
-        return $this->hasMany(Transferencias::class);
+        return $this->hasMany(Transferencia::class);
     }
 
 

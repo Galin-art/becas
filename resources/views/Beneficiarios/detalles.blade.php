@@ -110,12 +110,14 @@
                                 <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
                                     <span class="font-normal">
 
-                                        @if($infoC==null)
-                                            {{$informacion->curp}}
-                                        @else
-                                            no tiene una curt registrada
-                                        @endif
-                                    </span>
+{{--
+{{--                                    {{$informacion->curp}}--}}
+                                    @if ($informacion->curp==null)
+                                        no existe una curp registrada
+                                    @else
+                                        {{$informacion->curp}}
+                                    @endif
+
                                 </dd>
                             </div>
                             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">

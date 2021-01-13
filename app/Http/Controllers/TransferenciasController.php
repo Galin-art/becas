@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Transferencias;
+use App\Models\Transferencia;
 use Illuminate\Http\Request;
 
 class TransferenciasController extends Controller
@@ -44,10 +44,10 @@ class TransferenciasController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Transferencias  $transferencias
+     * @param  \App\Models\Transferencia  $transferencias
      * @return \Illuminate\Http\Response
      */
-    public function show(Transferencias $transferencias)
+    public function show(Transferencia $transferencias)
     {
         //
     }
@@ -55,10 +55,10 @@ class TransferenciasController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Transferencias  $transferencias
+     * @param  \App\Models\Transferencia  $transferencias
      * @return \Illuminate\Http\Response
      */
-    public function edit(Transferencias $transferencias)
+    public function edit(Transferencia $transferencias)
     {
         //
     }
@@ -67,10 +67,10 @@ class TransferenciasController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Transferencias  $transferencias
+     * @param  \App\Models\Transferencia  $transferencias
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Transferencias $transferencias)
+    public function update(Request $request, Transferencia $transferencias)
     {
         //
     }
@@ -78,10 +78,10 @@ class TransferenciasController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Transferencias  $transferencias
+     * @param  \App\Models\Transferencia  $transferencias
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Transferencias $transferencias)
+    public function destroy(Transferencia $transferencias)
     {
         //
     }
