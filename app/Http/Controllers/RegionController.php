@@ -127,7 +127,7 @@ class RegionController extends Controller
 
 
 //        return back()->with('message', 'Importanción de Regiones completada');
-        return redirect('/importar')->with('success', 'importacion completa!');
+        return redirect('/importar')->with('success', 'importacion de regiones completa!');
 
     }
 

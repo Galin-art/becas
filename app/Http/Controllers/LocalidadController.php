@@ -105,10 +105,16 @@ class LocalidadController extends Controller
 
 
 
+
 //        return back()->with('message', 'Importanción de municipios completada');
-        return redirect('/importar')->with('success', 'importacion completa!');
+        return redirect('/importar')->with('success', 'importacion  de localidades completa!');
+
+
+
 
     }
+
+
 
 
 

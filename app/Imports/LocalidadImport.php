@@ -9,7 +9,7 @@ use Maatwebsite\Excel\Concerns\SkipsOnError;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class LocalidadImport implements ToModel, WithHeadingRow, SkipsOnError
+class LocalidadImport implements ToModel,  SkipsOnError
 {
     use Importable;
 
@@ -27,11 +27,12 @@ class LocalidadImport implements ToModel, WithHeadingRow, SkipsOnError
     {
         return new Localidad([
             //
-            'id'=>$row['id'],
-            'localidad'=>$row['localidad'],
-            'cons'=>$row['cons'],
-            'inegi'=>$row['inegi'],
-            'municipio_id'=>$row['municipio_id'],
+            'id'=>$row[9],
+            'localidad'=>$row['5'],
+            'tipo'=>$row[7],
+            'tipotexto'=>$row[8],
+            'inegi'=>$row[6],
+            'municipio_id'=>$row[2],
         ]);
     }
 }

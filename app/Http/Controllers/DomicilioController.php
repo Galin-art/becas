@@ -2,21 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Imports\MunicipioImport;
-use App\Models\Municipio;
+use App\Models\Domicilio;
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Facades\Excel;
 
-class MunicipioController extends Controller
+class DomicilioController extends Controller
 {
-
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-
     /**
      * Display a listing of the resource.
      *
@@ -51,10 +41,10 @@ class MunicipioController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Municipio  $municipio
+     * @param  \App\Models\Domicilio  $domicilio
      * @return \Illuminate\Http\Response
      */
-    public function show(Municipio $municipio)
+    public function show(Domicilio $domicilio)
     {
         //
     }
@@ -62,10 +52,10 @@ class MunicipioController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Municipio  $municipio
+     * @param  \App\Models\Domicilio  $domicilio
      * @return \Illuminate\Http\Response
      */
-    public function edit(Municipio $municipio)
+    public function edit(Domicilio $domicilio)
     {
         //
     }
@@ -74,10 +64,10 @@ class MunicipioController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Municipio  $municipio
+     * @param  \App\Models\Domicilio  $domicilio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Municipio $municipio)
+    public function update(Request $request, Domicilio $domicilio)
     {
         //
     }
@@ -85,28 +75,11 @@ class MunicipioController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Municipio  $municipio
+     * @param  \App\Models\Domicilio  $domicilio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Municipio $municipio)
+    public function destroy(Domicilio $domicilio)
     {
         //
     }
-
-
-
-    public function import1(Request $request)
-    {
-        $file = $request->file('file');
-        Excel::import(new MunicipioImport, $file);
-
-
-
-
-//        return back()->with('message', 'Importanción de municipios completada');
-        return redirect('/importar')->with('success', 'importacion de municipios completa!');
-
-    }
-
-
 }

@@ -51,7 +51,7 @@ class Beneficiario extends Model
 
     public function scopeFamilai($query, $famidsss){
         if($famidsss){
-            return $query->where('famid','LIKE',"%$famidsss%");
+            return $query->where('id','LIKE',"%$famidsss%");
 //            return $query->where('dato de la base','LIKE',"%$famidsss%");
         }
     }

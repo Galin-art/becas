@@ -12,7 +12,8 @@ class Localidad extends Model
     protected $fillable=[
         'id',
         'localidad',
-        'cons',
+        'tipo',
+        'tipotexto',
         'inegi',
         'municipio_id',
 

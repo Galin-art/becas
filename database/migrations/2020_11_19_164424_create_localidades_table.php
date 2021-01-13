@@ -16,7 +16,8 @@ class CreateLocalidadesTable extends Migration
         Schema::create('localidades', function (Blueprint $table) {
             $table->id();
             $table->string('localidad');
-            $table->integer('cons')->nullable();
+            $table->string('tipo')->nullable();
+            $table->string('tipotexto')->nullable();
             $table->integer('inegi')->nullable();
             $table->unsignedBigInteger('municipio_id');
             $table->timestamps();
