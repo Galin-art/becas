@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('navegacion')
-    @include('ui.adminnav')
+    @include('ui.nave2')
 @endsection
 
 @section('content')
@@ -185,7 +185,7 @@
 
 
                                             @if($mys)
-                                                {{$mys->beneficiario_id}}
+                                                {{$mys->integrante}}
                                             @else
                                                 no tiene ningun integrante
                                             @endif
@@ -204,39 +204,6 @@
                             </div>
 
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -306,12 +273,39 @@
                             </div>
 
 
+
+                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                <dt class="text-sm leading-5 font-medium text-gray-500">
+                                    colonia
+                                </dt>
+                                <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+
+                                    @if ($Domi->domicilio->colonia==null)
+                                        No tiene una colonia registrada
+                                    @else
+                                        {{$Domi->domicilio->colonia}}
+                                    @endif
+
+
+                                </dd>
+                            </div>
+
+
+
+
                             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                 <dt class="text-sm leading-5 font-medium text-gray-500">
                                     Referencias
                                 </dt>
                                 <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                    descripcion de donde mas omenos se encuentra ubicado la persona
+
+                                    @if ($Domi->domicilio->referencia==null)
+                                        no existe una referencias completa
+                                    @else
+                                        {{$Domi->domicilio->referencia}}
+                                    @endif
+
+
                                 </dd>
                             </div>
 
@@ -319,6 +313,7 @@
                         </dl>
                     </div>
                 </div>
+
 
 
             </div>
@@ -401,16 +396,16 @@
                                                 {{"$ ".$transf->monto}}</a>
                                             </td>
                                             <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
-                                                <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">CANAL</span>
+                                                <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">CANAL</span><br>
                                                 {{$transf->canal}}
                                             </td>
                                             <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
-                                                <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">BIMESTRE</span>
+                                                <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">BIMESTRE</span><br>
                                                 {{$transf->bimestre->bimestre." del ".$transf->año}}
                                             </td>
 
                                             <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
-                                                <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">MODALIDAD</span>
+                                                <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">MODALIDAD</span><br>
                                                 <br>
                                                 {{$transf->modalidad}}
                                             </td>
@@ -451,47 +446,11 @@
 
                         <div>
                             <dl>
-                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                    <dt class="text-sm leading-5 font-medium text-gray-500">
-                                        Año
-                                    </dt>
-                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                        <span class="font-normal">
-
-                                            @foreach($informacion->transferencias as $transf)
-                                                {{$transf->año}}
-                                            @endforeach
-
-                                        </span>
-                                    </dd>
-                                </div>
-                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                    <dt class="text-sm leading-5 font-medium text-gray-500">
-                                        Bimestre
-                                    </dt>
-                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                        <span class="font-normal">
-
-                                            @foreach($informacion->transferencias as $transf)
-                                                {{$transf->bimestre->bimestre}}
-                                            @endforeach
 
 
-                                        </span></dd>
-                                </div>
 
 
-                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                    <dt class="text-sm leading-5 font-medium text-gray-500">
-                                        canal
-                                    </dt>
-                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                        <span class="font-normal">
-                                        @foreach($informacion->transferencias as $transf)
-                                                {{$transf->canal}}
-                                            @endforeach
-                                         </span></dd>
-                                </div>
+
 
 
                                 <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -506,53 +465,29 @@
                                             @endforeach </span>
                                     </dd>
                                 </div>
-                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                    <dt class="text-sm leading-5 font-medium text-gray-500">
-                                        Modalidad
-                                    </dt>
-                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                        <span class="font-normal">
-                                             @foreach($informacion->transferencias as $transf)
-                                                {{$transf->modalidad}}
-                                            @endforeach </span>
-                                        </span>
-                                    </dd>
-                                </div>
-                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                    <dt class="text-sm leading-5 font-medium text-gray-500">
-                                        Monto
-                                    </dt>
-                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                        <h2></h2><span
-                                            class="font-normal  text-pink-800 text-lg bg-clip-content p-4 bg-indigo-300 border-4 border-indigo-300 border-dashed">
-                                        @foreach($informacion->transferencias as $transf)
-                                                {{$transf->monto}}
-                                            @endforeach </span>
-
-                                    </dd>
-                                </div>
-
-                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                    <dt class="text-sm leading-5 font-medium text-gray-500">
-                                        tarjeta
-                                    </dt>
-                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                                        <a href="{{route('tajetas.persona')}}">
-                                            <button
-                                                class="bg-teal-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
-                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                                                </svg>
-                                                <span>ver informacion de la tarjeta</span>
-                                            </button>
 
 
-                                        </a>
-                                    </dd>
-                                </div>
+
+{{--                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">--}}
+{{--                                    <dt class="text-sm leading-5 font-medium text-gray-500">--}}
+{{--                                        tarjeta--}}
+{{--                                    </dt>--}}
+{{--                                    <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">--}}
+{{--                                        <a href="{{route('tajetas.persona')}}">--}}
+{{--                                            <button--}}
+{{--                                                class="bg-teal-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">--}}
+{{--                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"--}}
+{{--                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                    <path stroke-linecap="round" stroke-linejoin="round"--}}
+{{--                                                          stroke-width="2"--}}
+{{--                                                          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>--}}
+{{--                                                </svg>--}}
+{{--                                                <span>ver informacion de la tarjeta</span>--}}
+{{--                                            </button>--}}
+{{--                                        </a>--}}
+{{--                                    </dd>--}}
+{{--                                </div>--}}
+
 
 
                             </dl>

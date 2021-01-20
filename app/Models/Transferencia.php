@@ -9,6 +9,21 @@ class Transferencia extends Model
 {
     use HasFactory;
 
+    protected $fillable=[
+        'id',
+//        'año',
+        'monto',
+        'canal',
+        'tipoCanal',
+        'modalidad',
+        'tipoDocumento',
+        'observaciones',
+        'beneficiario_id',
+        'bimestre_id',
+
+    ];
+    protected $table= 'transferencias';
+
     public function bimestre(){
         return $this->belongsTo(Bimestre::class);
     }

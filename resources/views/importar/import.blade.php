@@ -212,6 +212,64 @@
 
 
 
+
+
+
+
+
+
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            </div>
+                            <h2 class="text-lg  font-medium title-font mb-2">Domicilios </h2>
+                            <br>
+
+
+                            <form action="{{route('domicilio.import.exel')}}" method="post" enctype="multipart/form-data">
+                                @csrf
+
+                                {{--                                @if(Session::has('message'))--}}
+                                {{--                                    <p>{{ Session::get('message') }}</p>--}}
+                                {{--                                    <br>--}}
+                                {{--                                @endif--}}
+                                <br>
+
+                                <input type="file" name="file">
+
+
+
+                                <div class="m-3 flex justify-end">
+                                    <button class="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center flex justify-end">
+                                        <span class="mr-2">Send</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentcolor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+
+                            </form>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="xl:w-1/3 md:w-1/2 p-4">
                         <div class="border border-gray-300 p-6 rounded-lg">
                             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
@@ -268,22 +326,44 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="xl:w-1/3 md:w-1/2 p-4">
                         <div class="border border-gray-300 p-6 rounded-lg">
                             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
                             </div>
-                            <h2 class="text-lg  font-medium title-font mb-2">Bintess</h2>
+                            <h2 class="text-lg  font-medium title-font mb-2">Integrantes</h2>
                             <br>
 
 
                             <form action="{{route('integrantes.import.exel')}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
-{{--                                @if(Session::has('message'))--}}
-{{--                                    <p>{{ Session::get('message') }}</p>--}}
-{{--                                    <br>--}}
-{{--                                @endif--}}
+                                {{--                                @if(Session::has('message'))--}}
+                                {{--                                    <p>{{ Session::get('message') }}</p>--}}
+                                {{--                                    <br>--}}
+                                {{--                                @endif--}}
                                 <br>
 
                                 <input type="file" name="file">
@@ -329,22 +409,29 @@
 
 
 
+
+
+
+
+
+
+
                     <div class="xl:w-1/3 md:w-1/2 p-4">
                         <div class="border border-gray-300 p-6 rounded-lg">
                             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
                             </div>
-                            <h2 class="text-lg  font-medium title-font mb-2">transferencias </h2>
+                            <h2 class="text-lg  font-medium title-font mb-2">Bimestres</h2>
                             <br>
 
 
-                            <form action="{{route('municipio.import.exel')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{route('bimestres.import.exel')}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
-{{--                                @if(Session::has('message'))--}}
-{{--                                    <p>{{ Session::get('message') }}</p>--}}
-{{--                                    <br>--}}
-{{--                                @endif--}}
+                                {{--                                @if(Session::has('message'))--}}
+                                {{--                                    <p>{{ Session::get('message') }}</p>--}}
+                                {{--                                    <br>--}}
+                                {{--                                @endif--}}
                                 <br>
 
                                 <input type="file" name="file">
@@ -383,17 +470,57 @@
                             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
                             </div>
-                            <h2 class="text-lg  font-medium title-font mb-2">integrantesss </h2>
+                            <h2 class="text-lg  font-medium title-font mb-2">trasferencias</h2>
+                            <br>
+
+
+                            <form action="{{route('transferencia.import.exel')}}" method="post" enctype="multipart/form-data">
+                                @csrf
+
+                                {{--                                @if(Session::has('message'))--}}
+                                {{--                                    <p>{{ Session::get('message') }}</p>--}}
+                                {{--                                    <br>--}}
+                                {{--                                @endif--}}
+                                <br>
+
+                                <input type="file" name="file">
+
+                                {{--                                <button>Importar Usuarios</button>--}}
+
+                                <div class="m-3 flex justify-end">
+                                    <button class="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center flex justify-end">
+                                        <span class="mr-2">Send</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path fill="currentcolor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+
+                            </form>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                            </div>
+                            <h2 class="text-lg  font-medium title-font mb-2">tarjetas</h2>
                             <br>
 
 
                             <form action="{{route('integrantes.import.exel')}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
-{{--                                @if(Session::has('message'))--}}
-{{--                                    <p>{{ Session::get('message') }}</p>--}}
-{{--                                    <br>--}}
-{{--                                @endif--}}
+                                {{--                                @if(Session::has('message'))--}}
+                                {{--                                    <p>{{ Session::get('message') }}</p>--}}
+                                {{--                                    <br>--}}
+                                {{--                                @endif--}}
                                 <br>
 
                                 <input type="file" name="file">
@@ -415,7 +542,6 @@
 
                         </div>
                     </div>
-
 
 
 

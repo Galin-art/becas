@@ -75,40 +75,47 @@
 
                         <br>
 
-                        <form method="post" action="{{route('users.store')}}">
-                            @csrf
-                            <label class="block text-base text-black">
-                                name usuario<br>
-                                <input title="text" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                            </label>
-                            <br>
+                                <form method="post" action="{{route('users.store')}}">
+                                    @csrf
+                                    <label class="block text-base text-black">
+                                        name usuario<br>
+                                        <input title="text" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </label>
+                                    <br>
 
-                            <label class="block text-base text-black">
-                                email del usuario<br>
-                                <input title="text" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                            </label>
+                                    <label class="block text-base text-black">
+                                        email del usuario<br>
+                                        <input title="text" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </label>
 
-                            <br>
+                                    <br>
 
-                            <label class="block text-base text-black">
-                                tipo<br>
-                                <input title="text" name="tipo" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                            </label>
-                            <br>
 
-                            <label class="block text-base text-black">
-                                region id<br>
-                                <input title="text" name="region_id" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                            </label>
-                            <br>
+                                    <div class="w-full ">
+                                        {!! Form::label('tipo', 'Tipo de usuario') !!}
+                                        {!! Form::select('tipo',[''=>'selecciona un previlegio','1'=>'Administrador','0'=>'Usuario']) !!}
 
-                            <label class="block text-base text-black">
-                                password<br>
-                                <input type="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                            </label>
-                            <br>
-                            <br>
-{{--                            <button>Guardar</button>--}}
+                                    </div>
+
+
+
+
+
+                                    <br>
+
+                                    <label class="block text-base text-black">
+                                        region id<br>
+                                        <input title="text" name="region_id" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </label>
+                                    <br>
+
+                                    <label class="block text-base text-black">
+                                        password<br>
+                                        <input type="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <button>Guardar</button>
 
 
                                     <button
@@ -125,7 +132,7 @@
 
 
 
-                        </form>
+                                </form>
                             </div>
                         </div>
 

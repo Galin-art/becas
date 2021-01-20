@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\BimestreImport;
 use App\Models\Bimestre;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class BimestreController extends Controller
 {
@@ -84,4 +86,18 @@ class BimestreController extends Controller
     {
         //
     }
+
+
+    public function import8 (Request $request)
+    {
+        $file = $request->file('file');
+        Excel::import(new BimestreImport(), $file);
+
+
+        return redirect('/importar')->with('success', 'importacion de bimestres completa!');
+
+    }
+
+
+
 }

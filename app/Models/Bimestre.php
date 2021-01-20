@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Bimestre extends Model
 {
     use HasFactory;
+
+    protected $fillable=[
+        'id',
+        'bimestre',
+    ];
+
+
+
     public function transferencias(){
         return $this->hasMany(Transferencia::class);
     }

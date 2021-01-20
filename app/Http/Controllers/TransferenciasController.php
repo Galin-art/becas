@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\TransferenciaImport;
 use App\Models\Transferencia;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class TransferenciasController extends Controller
 {
@@ -85,4 +87,20 @@ class TransferenciasController extends Controller
     {
         //
     }
+
+
+    public function import7(Request $request)
+    {
+        $file = $request->file('file');
+        Excel::import(new TransferenciaImport(), $file);
+
+
+
+
+//        return back()->with('message', 'Importanción de Regiones completada');
+        return redirect('/importar')->with('success', 'importacion de tranferencias completa!');
+
+    }
+
+
 }

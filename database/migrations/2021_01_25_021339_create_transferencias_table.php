@@ -15,16 +15,16 @@ class CreateTransferenciasTable extends Migration
     {
         Schema::create('transferencias', function (Blueprint $table) {
             $table->id();
-            $table->string('año');
-            $table->integer('monto')->nullable();
-            $table->integer('canal')->nullable();
+            $table->string('año')->default(date('Y'));
+            $table->string('monto')->nullable();
+            $table->string('canal')->nullable();
             $table->string('tipoCanal')->nullable();
             $table->string('modalidad')->nullable();
             $table->string('tipoDocumento')->nullable();
             $table->string('observaciones')->nullable();
             $table->unsignedBigInteger('beneficiario_id');
             $table->unsignedBigInteger('bimestre_id')->nullable();
-            $table->unsignedBigInteger('tarjeta_id')->nullable();
+
             $table->timestamps();
 
 
@@ -32,7 +32,7 @@ class CreateTransferenciasTable extends Migration
             $table->foreign('beneficiario_id')->references('id')->on('beneficiarios');
 
             $table->foreign('bimestre_id')->references('id')->on('bimestres');
-            $table->foreign('tarjeta_id')->references('id')->on('tarjetas');
+//     ');
         });
     }
 

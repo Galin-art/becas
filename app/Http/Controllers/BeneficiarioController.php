@@ -120,11 +120,13 @@ class BeneficiarioController extends Controller
         $informacion= Beneficiario::with('transferencias.bimestre')->find($id);
         $infoC = Beneficiario::with('localidad.municipio.region')->find($id);
         $int = Beneficiario::with('integrant')->find($id);
+        $Domi = Beneficiario::with('domicilio')->find($id);
 //  return $informacion; //me trae los datos de la persona y transferencias
 //        return $infoC;//la localidad su municipio y su region
 //        return $int;//me trae los datos de los integrantes
+//        return $Domi;
 
-        return view('Beneficiarios.detalles',compact('informacion','infoC','int'));
+        return view('Beneficiarios.detalles',compact('informacion','infoC','int','Domi'));
 
 
     }
@@ -156,8 +158,8 @@ class BeneficiarioController extends Controller
 
 
 
-        return back()->with('message', 'Importanción de municipios completada');
-        return redirect('/importar')->with('success', 'All good!');
+//        return back()->with('message', 'Importanción de municipios completada');
+        return redirect('/importar')->with('success', 'importacion de beneficiarios completa');
 
     }
 

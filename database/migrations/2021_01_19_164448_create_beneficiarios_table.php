@@ -18,7 +18,7 @@ class CreateBeneficiariosTable extends Migration
             $table->string('nombre');
             $table->string('paterno');
             $table->string('materno');
-            $table->integer('telefono')->nullable();
+//          $table->integer('telefono')->nullable();
             $table->string('folio');
             $table->string('curp')->nullable();
             $table->string('entidad')->nullable();

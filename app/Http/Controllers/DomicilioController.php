@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\DomicilioImport;
 use App\Models\Domicilio;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class DomicilioController extends Controller
 {
@@ -82,4 +84,22 @@ class DomicilioController extends Controller
     {
         //
     }
+
+
+    public function import6(Request $request)
+    {
+//        return $request;
+        $file = $request->file('file');
+        Excel::import(new DomicilioImport(), $file);
+
+
+
+
+//        return back()->with('message', 'Importanción de integrantes completada');
+        return redirect('/importar')->with('success', 'importacion completa!');
+
+
+    }
+
+
 }

@@ -39,11 +39,11 @@
                     @guest
                         <a class="text-white{{--color blanco de las letras--}} no-underline hover:text-gray-300 p-3" href="{{ route('login') }}">{{ __('Login') }}</a>
 
-                        @if (Route::has('register'))
+{{--                        @if (Route::has('register'))--}}
 
-                            <a class="text-white{{--color blanco de las letras--}} no-underline hover:text-gray-300 p-3" href="{{ route('register') }}">{{ __('Register') }}</a>
+{{--                            <a class="text-white--}}{{--color blanco de las letras--}}{{-- no-underline hover:text-gray-300 p-3" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
 
-                        @endif
+{{--                        @endif--}}
                     @else
 
                         {{--                          <span class="text-right text-sm pr-4">  {{ Auth::user()->name }}</span>  esto le da color al nombre del login --}}

@@ -15,7 +15,7 @@ class CreateDomiciliosTable extends Migration
     {
         Schema::create('domicilios', function (Blueprint $table) {
             $table->id();
-            $table->string('int')->nullable();
+//            $table->string('int')->nullable();
             $table->string('inegi')->nullable();
             $table->string('tipovt')->nullable();
             $table->string('vialidad')->nullable();

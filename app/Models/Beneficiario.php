@@ -13,11 +13,11 @@ class Beneficiario extends Model
         'nombre',
         'paterno',
         'materno',
-        'telefono',
         'folio',
         'curp',
         'entidad',
         'localidad_id',
+        'domicilio_id',
 
 
     ];
@@ -38,6 +38,9 @@ class Beneficiario extends Model
 
     public function integrant(){
         return $this->HasMany(Integrante::class);
+    }
+    public function domicilio(){
+        return $this->belongsTo(Domicilio::class);
     }
 
 

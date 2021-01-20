@@ -110,7 +110,7 @@ class RegionController extends Controller
             ->join('localidades', 'municipios.id', '=', 'localidades.municipio_id')->
             join('beneficiarios', 'localidades.id', '=', 'beneficiarios.localidad_id')
             ->where('regiones.id', '=', $datoUsuario)
-            ->get();
+            ->simplePaginate(50);
 
 
 //        return $filtrados1;

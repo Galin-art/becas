@@ -96,7 +96,7 @@ class IntegranteController extends Controller
 
 
 //        return back()->with('message', 'Importanción de integrantes completada');
-        return redirect('/importar')->with('success', 'importacion completa!');
+        return redirect('/importar')->with('success', 'importacion completa de integrantes!');
 
 
     }
