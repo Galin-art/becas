@@ -5,9 +5,10 @@ namespace App\Imports;
 use App\Models\Bimestre;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\SkipsOnError;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
 
-class BimestreImport implements ToModel, SkipsOnError
+class BimestreImport implements ToModel, SkipsOnError, WithHeadingRow
 {
     /**
     * @param array $row
@@ -25,8 +26,9 @@ class BimestreImport implements ToModel, SkipsOnError
     {
         return new Bimestre([
             //
-            'id'=>$row[0],
-            'bimestre'=>$row[1],
+            'id'=>$row['id'],
+            'bimestre'=>$row['bimestre'],
+//            'prueba'=>$row['bimestre'].$row['id'],
         ]);
     }
 }

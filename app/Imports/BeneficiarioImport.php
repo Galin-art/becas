@@ -9,7 +9,7 @@ use Maatwebsite\Excel\Concerns\SkipsOnError;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class BeneficiarioImport implements ToModel, SkipsOnError
+class BeneficiarioImport implements ToModel, SkipsOnError, WithHeadingRow
 {
     use Importable;
 
@@ -27,16 +27,16 @@ class BeneficiarioImport implements ToModel, SkipsOnError
     {
         return new Beneficiario([
             //
-            'id'=>$row[0],
-            'nombre'=>$row[3],
-            'paterno'=>$row[4],
-            'materno'=>$row[5],
-//            'telefono'=>$row[],
-            'folio'=>$row[2],
-            'curp'=>$row[7],
-            'entidad'=>$row[1],
-            'localidad_id'=>$row[10],
-            'domicilio_id'=>$row[0],
+            'id'=>$row['familia_id'],
+            'nombre'=>$row['nombre'],
+            'paterno'=>$row['paterno'],
+            'materno'=>$row['materno'],
+//          'telefono'=>$row[],
+            'folio'=>$row['foliotutor'],
+            'curp'=>$row['curp'],
+            'entidad'=>$row['int_id'],
+            'localidad_id'=>$row['locid'],
+            'domicilio_id'=>$row['familia_id'],
 
         ]);
     }

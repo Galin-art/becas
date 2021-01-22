@@ -5,10 +5,10 @@ namespace App\Imports;
 use App\Models\Transferencia;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\SkipsOnError;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
 
-
-class TransferenciaImport implements ToModel , SkipsOnError
+class TransferenciaImport implements ToModel , SkipsOnError,WithHeadingRow
 {
     /**
     * @param array $row
@@ -26,17 +26,19 @@ class TransferenciaImport implements ToModel , SkipsOnError
     {
         return new Transferencia([
             //
-            'id'=>$row[0],
+            'id'=>$row['familia_id'],
 //            'año'=>$row[1],
-            'monto'=>$row[6],
-            'canal'=>$row[1],
-            'tipoCanal'=>$row[2],
-            'modalidad'=>$row[3],
-            'tipoDocumento'=>$row[4],
-            'observaciones'=>$row[13],
-            'beneficiario_id'=>$row[0],
-            'bimestre_id'=>$row[12],
+            'monto'=>$row['total'],
+            'canal'=>$row['canal'],
+            'tipoCanal'=>$row['tipocanal'],
+            'modalidad'=>$row['liquidador'],
+            'tipoDocumento'=>$row['modalidad'],
+            'observaciones'=>$row['observaciones'],
+            'beneficiario_id'=>$row['familia_id'],
+            'bimestre_id'=>$row['bimestre_id'],
 //            'tarjeta_id'=>$row[10],
+            'registro'=>$row['familia_id'].$row['bimestre_id'],
+
         ]);
     }
 }

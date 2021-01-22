@@ -9,7 +9,7 @@ use Maatwebsite\Excel\Concerns\SkipsOnError;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class RegionesImport implements ToModel, SkipsOnError
+class RegionesImport implements ToModel, SkipsOnError, WithHeadingRow
 {
     use Importable;
 
@@ -28,8 +28,8 @@ class RegionesImport implements ToModel, SkipsOnError
     {
         return new Region([
             //
-            'id'=> $row[0],
-            'region' => $row[1],
+            'id'=> $row['idreg'],
+            'region' => $row['region'],
 
         ]);
     }

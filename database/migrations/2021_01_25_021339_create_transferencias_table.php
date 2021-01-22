@@ -24,13 +24,14 @@ class CreateTransferenciasTable extends Migration
             $table->string('observaciones')->nullable();
             $table->unsignedBigInteger('beneficiario_id');
             $table->unsignedBigInteger('bimestre_id')->nullable();
+            $table->string('registro')->unique()->nullable();
 
             $table->timestamps();
 
 
-
+//
             $table->foreign('beneficiario_id')->references('id')->on('beneficiarios');
-
+//
             $table->foreign('bimestre_id')->references('id')->on('bimestres');
 //     ');
         });

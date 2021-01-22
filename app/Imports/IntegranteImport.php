@@ -9,7 +9,7 @@ use Maatwebsite\Excel\Concerns\SkipsOnError;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class IntegranteImport implements ToModel,  SkipsOnError
+class IntegranteImport implements ToModel,  SkipsOnError, WithHeadingRow
 {
     use Importable;
 
@@ -27,9 +27,9 @@ class IntegranteImport implements ToModel,  SkipsOnError
     {
         return new Integrante([
             //
-            'id'=>$row[1],
-            'integrante'=>$row[1],
-            'beneficiario_id'=>$row[0],
+            'id'=>$row['int_id'],
+            'integrante'=>$row['int_id'],
+            'beneficiario_id'=>$row['familia_id'],
 
         ]);
     }

@@ -20,6 +20,7 @@ class Transferencia extends Model
         'observaciones',
         'beneficiario_id',
         'bimestre_id',
+        'registro',
 
     ];
     protected $table= 'transferencias';

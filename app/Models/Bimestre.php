@@ -12,6 +12,7 @@ class Bimestre extends Model
     protected $fillable=[
         'id',
         'bimestre',
+        'prueba',
     ];
 
 
