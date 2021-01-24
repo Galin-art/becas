@@ -19,12 +19,18 @@ Route::get('/', function () {
 
     return view('welcome');
 });
+
+Route::get('/offline', function () {
+    return view('vendor.laravelpwa.offline');
+});
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
 
 Route::get('/beneficiarios', [App\Http\Controllers\BeneficiarioController::class, 'index'])->name('lista.beneficiario');
+Route::get('/sinred', [App\Http\Controllers\BeneficiarioController::class, 'sinred'])->name('offline.beneficiario');
+
 Route::get('/search', [App\Http\Controllers\BeneficiarioController::class, 'show'])->name('searchBeneficiario');
 
 Route::get('beneficiarios/{beneficiario_id}',[App\Http\Controllers\BeneficiarioController::class,'detalles'])->name('BeneficiarioInformacion');

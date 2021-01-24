@@ -139,6 +139,8 @@ class BeneficiarioController extends Controller
 
 
 
+
+
 //{{$infoC}}
 //@foreach($informacion->transferencias as $transf)
 //{{$transf->monto}}
@@ -156,8 +158,6 @@ class BeneficiarioController extends Controller
         Excel::import(new BeneficiarioImport, $file);
 
 
-
-
 //        return back()->with('message', 'Importanción de municipios completada');
         return redirect('/importar')->with('success', 'importacion de beneficiarios completa');
 
@@ -166,6 +166,17 @@ class BeneficiarioController extends Controller
 
 
 
+    public function sinred(){
+        $listaBene= Beneficiario::with('localidad.municipio.region',)->simplePaginate(50);
+        $int = Beneficiario::with('integrant')->simplePaginate(50);
+
+
+//        return $listaBene;
+//        return int
+        return view('Beneficiarios.listaOffline',compact('listaBene','int'));
+
+
+    }
 
 
 
