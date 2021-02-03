@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.9">
-      <change afterPath="$PROJECT_DIR$/config/laravelpwa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,6 +309,7 @@
       <workItem from="1612032919675" duration="2362000" />
       <workItem from="1612129776916" duration="120000" />
       <workItem from="1612155336688" duration="1336000" />
+      <workItem from="1612386660935" duration="2607000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>
@@ -428,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611463227888</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fase 2.9">
+      <created>1612386844064</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612386844065</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,6 +474,7 @@
     <MESSAGE value="fase 2.6" />
     <MESSAGE value="fase 2.7" />
     <MESSAGE value="fase 2.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="fase 2.8" />
+    <MESSAGE value="fase 2.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="fase 2.9" />
   </component>
 </project>
