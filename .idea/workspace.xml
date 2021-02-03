@@ -19,20 +19,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.7">
-      <change afterPath="$PROJECT_DIR$/public/resources/views/Beneficiarios/listaOffline.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/listaOffline.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/becas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/becas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.8">
+      <change afterPath="$PROJECT_DIR$/public/serviceworker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravelpwa/offline.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9e2b118-977c-4c7a-85be-8be080e1a4a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9e2b118-977c-4c7a-85be-8be080e1a4a5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeneficiarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/sweetalert/sweetalert.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Imports/TransferenciaImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/TransferenciaImport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Transferencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transferencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_25_021339_create_transferencias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_25_021339_create_transferencias_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Beneficiarios/lista.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,8 +205,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Beneficiarios" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../becasOffline" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -312,7 +310,15 @@
       <workItem from="1611250067299" duration="18647000" />
       <workItem from="1611419621724" duration="16241000" />
       <workItem from="1611440385006" duration="490000" />
-      <workItem from="1611441418087" duration="16179000" />
+      <workItem from="1611441418087" duration="16373000" />
+      <workItem from="1611463522453" duration="15000" />
+      <workItem from="1611596583970" duration="14083000" />
+      <workItem from="1611766436472" duration="4098000" />
+      <workItem from="1611936837838" duration="870000" />
+      <workItem from="1612021686491" duration="589000" />
+      <workItem from="1612032919675" duration="2362000" />
+      <workItem from="1612129776916" duration="120000" />
+      <workItem from="1612155336688" duration="1336000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>
@@ -426,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611280192557</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fase 2.8">
+      <created>1611463227888</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611463227888</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,6 +475,7 @@
     <MESSAGE value="fase 2.5" />
     <MESSAGE value="fase 2.6" />
     <MESSAGE value="fase 2.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="fase 2.7" />
+    <MESSAGE value="fase 2.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="fase 2.8" />
   </component>
 </project>

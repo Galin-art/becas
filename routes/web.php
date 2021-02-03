@@ -37,6 +37,7 @@ Route::get('beneficiarios/{beneficiario_id}',[App\Http\Controllers\BeneficiarioC
 //Route::get('beneficiarios/{id}',[App\Http\Controllers\BeneficiarioController::class,'detalles1'])->name('transferencias');
 
 
+
 Route::get('beneficiario/tarjeta',[\App\Http\Controllers\TarjetaController::class,'index'])->name('tajetas.persona');
 
 

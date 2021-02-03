@@ -12,6 +12,7 @@ class Transferencia extends Model
     protected $fillable=[
         'id',
 //        'año',
+        'familia_id',
         'monto',
         'canal',
         'tipoCanal',

@@ -26,8 +26,9 @@ class TransferenciaImport implements ToModel , SkipsOnError,WithHeadingRow
     {
         return new Transferencia([
             //
-            'id'=>$row['familia_id'],
+//            'id'=>$row['familia_id'],
 //            'año'=>$row[1],
+            'familia_id'=>$row['familia_id'],
             'monto'=>$row['total'],
             'canal'=>$row['canal'],
             'tipoCanal'=>$row['tipocanal'],
