@@ -49,11 +49,27 @@
 
                     <br>
 
-                    <label class="block text-base text-black">
-                        Region id<br>
-                        <input title="text" name="region_id" value="{{$user->region_id}}"
-                               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                    </label>
+                    <div class="w-full ">
+                        {!! Form::label('region_id', 'region') !!}
+                        {!! Form::select('region_id',[''=>'selecciona una region',
+                                '200'=>'TODAS',
+                                '20001'=>'CIUDAD IXTEPEC',
+                                '20002'=>'HEROICA CIUDAD DE HUAJUAPAN DE LEON',
+                                '20003'=>'HEROICA CIUDAD DE JUCHITAN DE ZARAGOZA',
+                                '20004'=>'HEROICA CIUDAD DE TLAXIACO',
+                                '20005'=>'HUAUTLA DE JIMENEZ',
+                                '20006'=>'IXTLAN DE JUAREZ',
+                                '20007'=>'MIAHUATLAN DE PORFIRIO DIAZ',
+                                '20008'=>'OAXACA DE JUAREZ',
+                                '20009'=>'SALINA CRUZ',
+                                '200010'=>'SAN JUAN BAUTISTA TUXTEPEC',
+                                '200011'=>'SAN PEDRO MIXTEPEC',
+                                '200012'=>'SANTIAGO PINOTEPA NACIONAL',
+                                '200013'=>'SANTO DOMINGO TEHUANTEPEC',
+                                '200015'=>'TEOTITLAN DE FLORES MAGON',
+                                '200015'=>'TLACOLULA DE MATAMOROS']) !!}
+
+                    </div>
                     <br>
 
                     <label class="block text-base text-black">

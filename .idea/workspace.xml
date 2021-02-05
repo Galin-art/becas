@@ -19,7 +19,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.9.1" />
+    <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +50,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Galin-art/becas" />
+        <option value="https://github.com/Galin-art/proyectoBeca" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -203,7 +214,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -311,7 +322,8 @@
       <workItem from="1612467532133" duration="27000" />
       <workItem from="1612469099657" duration="542000" />
       <workItem from="1612486047618" duration="2485000" />
-      <workItem from="1612536027549" duration="11495000" />
+      <workItem from="1612536027549" duration="11942000" />
+      <workItem from="1612564702087" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>
@@ -453,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612547912024</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fase 2">
+      <created>1612548047379</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612548047379</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,6 +511,7 @@
     <MESSAGE value="fase 2.8" />
     <MESSAGE value="fase 2.9" />
     <MESSAGE value="fase 2.9.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fase 2.9.1" />
+    <MESSAGE value="fase 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fase 2" />
   </component>
 </project>

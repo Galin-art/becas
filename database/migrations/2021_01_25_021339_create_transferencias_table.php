@@ -14,7 +14,7 @@ class CreateTransferenciasTable extends Migration
     public function up()
     {
         Schema::create('transferencias', function (Blueprint $table) {
-            $table->id();
+//            $table->id();
             $table->string('familia_id')->nullable();
             $table->string('año')->default(date('Y'));
             $table->string('monto')->nullable();
