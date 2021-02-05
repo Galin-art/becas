@@ -67,9 +67,13 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
         //
+//        $userD=User::all()->find($id);
+//        return $userD;
+//    return $user;
+        return view('usuarios.actualizar',compact('user'));
     }
 
     /**
@@ -79,9 +83,27 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,User $user )
     {
         //
+
+
+//    return $request;
+
+
+        $user->name=request('name');
+        $user->email=request('email');
+        $user->tipo=request('tipo');
+        $user->region_id=request('region_id');
+        $user->password=bcrypt(\request('password'));
+
+
+$user->save();
+
+        return redirect()->route('lista.Usuario');
+
+
+
     }
 
     /**
@@ -90,9 +112,12 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $user )
     {
         //
+    $user->delete();
+        return redirect()->route('lista.Usuario');
+
     }
 
     public function importar(){

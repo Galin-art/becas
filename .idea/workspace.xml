@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642d14ed-1758-4bec-9be6-407cc1b1b5d5" name="Default Changelist" comment="fase 2.9">
-      <change beforePath="$PROJECT_DIR$/procfile" beforeDir="false" afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/usuarios/actualizar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usuarios/crear.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +199,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../becasOffline" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pruebas" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -308,7 +312,11 @@
       <workItem from="1612032919675" duration="2362000" />
       <workItem from="1612129776916" duration="120000" />
       <workItem from="1612155336688" duration="1336000" />
-      <workItem from="1612386660935" duration="3127000" />
+      <workItem from="1612386660935" duration="5744000" />
+      <workItem from="1612467532133" duration="27000" />
+      <workItem from="1612469099657" duration="542000" />
+      <workItem from="1612486047618" duration="2485000" />
+      <workItem from="1612536027549" duration="11134000" />
     </task>
     <task id="LOCAL-00001" summary="fase 2 terminada">
       <created>1608065784392</created>

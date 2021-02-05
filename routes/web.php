@@ -51,6 +51,15 @@ Route::get('/region',[\App\Http\Controllers\RegionController::class, 'region'])-
 //usuarios
 Route::get('/usuario',[\App\Http\Controllers\UsuarioController::class,'index'])->name('lista.Usuario');
 Route::post('/',[\App\Http\Controllers\UsuarioController::class,'store'])->name('users.store');
+Route::get('/usuario/{user}/editar',[\App\Http\Controllers\UsuarioController::class,'edit'])->name('Usuario.edit');
+Route::patch('/usuario/{user}',[\App\Http\Controllers\UsuarioController::class,'update'])->name('Usuario.update');
+
+Route::delete('/usuario/{user}',[\App\Http\Controllers\UsuarioController::class,'destroy'])->name('Usuario.distroy');
+
+
+
+
+
 
 //importar
 Route::get('/importar',[\App\Http\Controllers\UsuarioController::class,'importar'])->name('import.tablas');

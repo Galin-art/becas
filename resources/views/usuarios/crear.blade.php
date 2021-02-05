@@ -5,7 +5,11 @@
 
 @section('content')
 
-
+    <button
+        class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none"
+    >
+        <a href="{{route('lista.beneficiario')}}">volver</a>
+    </button>
 
 
 
@@ -170,42 +174,30 @@
                                         <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
                                             <span
                                                 class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">id region</span>
+
+
+
                                             <button
-
-
-                                                class="bg-green-400 hover:bg-blue-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center  ">
-
-
-                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
-                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                                                </svg>
-
-
-                                                <span>ACTUALIZAR</span>
+                                                class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none"
+                                            >
+                                                <a href="{{route('Usuario.edit',$userss)}}">editar</a>
                                             </button>
 
                                             <br>
+                                            <br>
 
 
-                                            <button
+                                            <form method="POST" action="{{route('Usuario.distroy',$userss)}}">
+                                                @csrf
+                                                @method('DELETE')
 
+                                                <button
+                                                    class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-red-600 rounded-full shadow ripple hover:shadow-lg hover:bg-red-500 focus:outline-none"
+                                                >
+                                                    <a>Eliminar</a>
+                                                </button>
 
-                                                class="bg-red-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center  ">
-
-
-                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
-                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2"
-                                                          d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-
-
-                                                <span>ELIMINAR</span>
-                                            </button>
+                                            </form>
 
 
                                         </td>
@@ -289,10 +281,5 @@
     </script>
 
 
-    <button
-        class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none"
-    >
-        <a href="{{route('lista.beneficiario')}}">volver</a>
-    </button>
 
 @endsection
